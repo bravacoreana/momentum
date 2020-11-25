@@ -1,74 +1,77 @@
 html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 body {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #95afc0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #95afc0;
+	justify-content: center;
 }
 
 .clock {
-  color: #313131;
-  font-size: 45px;
+	color: #313131;
+	font-size: 45px;
 }
 
 .form,
-.greetings {
-  display: none;
+.greetings,
+.todoform {
+	display: none;
 }
 
 .form input,
 .todoform input {
-  padding: 10px 20px;
-  border: none;
-  border-bottom: 3px solid black;
-  background-color: transparent;
-  margin: 10px 0px;
+	padding: 10px 20px;
+	border: none;
+	border-bottom: 3px solid black;
+	background-color: transparent;
+	margin: 10px 0px;
 }
 
 .showing {
-  display: block;
+	display: block;
 }
 
 .todolist {
-  list-style: none;
+	max-width: 80vw;
+	list-style: none;
 }
 
 button {
-  background-color: transparent;
-  border: none;
-  font-size: 18px;
+	background-color: transparent;
+	border: none;
+	font-size: 18px;
 }
 
 button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .form input:focus,
 .todoform input:focus,
 button:focus {
-  outline: none;
+	outline: none;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .bgImage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  animation: fadeIn 0.5s ease-in;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: fadeIn 0.5s ease-in;
 }
