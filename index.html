@@ -7,14 +7,41 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<header>
-			<h1>TO DO LIST</h1>
-			<span class="js-weather"></span>
+		<div class="main-left">
 			<div class="js-clock clock">
-				<h6 class="js-clock-now">00:00</h6>
+				<span class="js-clock-now clock-now">00:00</span>
+				<span class="js-weather weather"></span>
 			</div>
-		</header>
-		<main>
+			<ul class="js-circle circle">
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="1"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="2"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="3"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="4"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="5"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="6"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="7"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="8"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="9"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="10"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="11"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="12"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="13"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="14"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="15"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="16"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="17"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="18"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="19"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="20"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="21"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="22"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="23"></div></li>
+				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="24"></div></li>
+			</ul>
+		</div>
+		<div class="main-right">
+			<h1>TO DO LIST</h1>
+
 			<form class="js-greetingForm form">
 				<input type="text" placeholder="What is your name?" />
 			</form>
@@ -24,7 +51,8 @@
 			</form>
 
 			<ul class="js-toDoList todolist"></ul>
-		</main>
+		</div>
+
 		<script src="js/index.js"></script>
 		<script src="js/clock.js"></script>
 		<script src="js/greeting.js"></script>
