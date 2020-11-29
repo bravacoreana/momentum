@@ -1,38 +1,45 @@
-.container {
-  height: 500px;
+.container-todolist {
+  height: 300px;
   width: 300px;
-  /* background-color: yellowgreen; */
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  position: relative;
-  border: 1px solid black;
-}
-
-.header {
-  height: 30%;
-  position: relative;
-}
-
-.header .bgImage {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
-.header .clear {
   position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 20px;
+  border: 1px solid black;
+  right: 500px;
+  background-color: rgb(235, 235, 235);
 }
 
-.header .clear .fa-hand-sparkles {
-  transform: transition 0.3s ease-in-out infinite;
+.add-to-do {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  margin: 5px;
+  background-color: #d8d8d8;
 }
 
-.header .clear .fa-hand-sparkles:hover {
-  animation: flash 0.4s ease-in-out infinite;
+.add-to-do .fa-plus {
+  width: 20px;
+}
+.add-to-do .fa-plus:hover {
   cursor: pointer;
+}
+
+.add-to-do input {
+  width: 200px;
+  border: none;
+  padding: 5px 10px;
+  background-color: #d8d8d8;
+}
+
+.add-to-do input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.add-to-do .clear .fa-hand-sparkles:hover {
+  cursor: pointer;
+  animation: flash 0.5s ease-in-out infinite;
 }
 
 @keyframes flash {
@@ -44,43 +51,11 @@
   }
 }
 
-.header #date {
-  position: absolute;
-  bottom: 10px;
-  padding-left: 20px;
-  font-size: 18px;
-}
-
-.add-to-do {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 20px;
-  background-color: rgba(206, 206, 206, 0.815);
-}
-
-.add-to-do .fa-plus:hover {
-  cursor: pointer;
-}
-
-.add-to-do input {
-  width: 200px;
-  border: none;
-  padding: 5px 10px;
-  background-color: antiquewhite;
-  border-radius: 10px;
-}
-
-.add-to-do input:focus {
-  outline: none;
-}
-
 .content {
-  height: 350px;
+  height: 100%;
   overflow-y: auto;
   background-color: rgb(235, 235, 235);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding: 10px 0px;
 }
 
 ul#list {
@@ -114,4 +89,18 @@ li.item > span.text {
 
 li.item > span.line-through {
   text-decoration: line-through;
+}
+
+@media screen and (max-width: 1800px) {
+  .container-todolist {
+    right: 100px;
+    top: 200px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .container-todolist {
+    right: 20%;
+    top: 20%;
+  }
 }

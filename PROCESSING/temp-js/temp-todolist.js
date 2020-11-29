@@ -13,7 +13,7 @@ const LINE_THROUGH = "line-through";
 let LIST = [];
 let id = 0;
 
-// get local storage
+// Get local storage
 let data = localStorage.getItem("TODO");
 if (data) {
   LIST = JSON.parse(data);
@@ -24,24 +24,31 @@ if (data) {
   id = 0;
 }
 
-// Load item to the user's interface
+// Load item
 function loadList(array) {
   array.forEach(function (item) {
     addToDo(item.name, item.id, item.done, item.trash);
   });
 }
 
-// Clear item completely
+// Clear item
 clear.addEventListener("click", function () {
-  localStorage.clear();
-  location.reload();
+  if (localStorage.getItem("TODO")) {
+    if (confirm("clear all your list?")) {
+      localStorage.clear();
+      location.reload();
+    } else {
+    }
+  } else {
+    alert("Nothing to clear!");
+  }
 });
 
 // Today's date
-const today = new Date();
-const options = { weekday: "long", month: "short", day: "numeric" };
+// const today = new Date();
+// const options = { weekday: "long", month: "short", day: "numeric" };
 
-dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+// dateElement.innerHTML = today.toLocaleDateString("en-US", options);
 
 // Add to do
 
