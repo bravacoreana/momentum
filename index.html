@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="main-left">
-			<div class="js-clock clock">
-				<span class="js-clock-now clock-now">00:00</span>
-				<span class="js-weather weather"></span>
-			</div>
-			<ul class="js-circle circle">
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="1"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="2"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="3"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="4"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="5"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="6"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="7"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="8"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="9"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="10"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="11"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="12"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="13"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="14"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="15"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="16"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="17"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="18"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="19"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="20"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="21"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="22"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="23"></div></li>
-				<li class="js-circle__list circle__list"><div class="js-circle__clock clock-color" id="24"></div></li>
-			</ul>
-		</div>
-		<div class="main-right">
-			<h1>TO DO LIST</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="js-clock clock">
+        <span class="js-clock-now clock-now">00:00</span>
+        <span class="js-weather weather"></span>
+      </div>
+    </header>
+    <div class="main">
+      <div class="frames">
+        <div class="js-frameBg frame"></div>
+        <div class="frame">A</div>
+        <div class="js-greeting greeting frame"></div>
+      </div>
+      <div class="container-todolist">
+        <!-- <div class="header"></div> -->
+        <!-- <div id="date"></div> -->
+        <div class="content">
+          <ul id="list"></ul>
+        </div>
+        <div class="add-to-do">
+          <i class="fas fa-plus"></i>
+          <form id="inputform">
+            <input type="text" id="inputToDo" placeholder="Enter a thing to do" autocomplete="off" />
+          </form>
+          <div class="clear">
+            <i class="fas fa-hand-sparkles"></i>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			<form class="js-greetingForm form">
-				<input type="text" placeholder="What is your name?" />
-			</form>
-			<h4 class="js-greetings greetings"></h4>
-			<form class="js-toDoForm todoform">
-				<input type="text" placeholder="Write things to do" />
-			</form>
+    <!--MODAL : ASK FOR NAME -->
+    <div class="modal-bg">
+      <div class="modal">
+        <h2 class="modal-header">Your Name will be displayed!</h2>
+        <form class="js-greetingForm modalForm">
+          <input type="text" placeholder="What is your name?" class="modal-input" />
+        </form>
+        <button class="modal-btn">Start</button>
+        <span class="modal-close">X</span>
+      </div>
+    </div>
 
-			<ul class="js-toDoList todolist"></ul>
-		</div>
+    <!--MODAL : SETTING -->
+    <div class="setting">
+      <div class="modal-setting">
+        <i class="fas fa-cog"></i>
+      </div>
+    </div>
 
-		<script src="js/index.js"></script>
-		<script src="js/clock.js"></script>
-		<script src="js/greeting.js"></script>
-		<script src="js/todo.js"></script>
-		<script src="js/background.js"></script>
-		<script src="js/weather.js"></script>
-	</body>
+    <script src="js/todolist.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/frameBg.js"></script>
+    <script src="js/modalName.js"></script>
+  </body>
 </html>

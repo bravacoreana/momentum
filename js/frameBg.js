@@ -3,7 +3,7 @@ const IMG_NUMBER = 6;
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `/images/${imgNumber + 1}.jpg`;
+  image.src = `images/frameHorizontal/${imgNumber + 1}.jpg`;
   frameBg.appendChild(image);
   image.classList.add("bgImage");
 }

@@ -1,24 +1,3 @@
-body {
-  min-width: 1024px;
-  min-height: 1024px;
-  background-image: url("/images/background-16-9.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.main {
-  width: 100%;
-  height: 1024px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
 .frames {
   width: 500px;
   height: 500px;
@@ -67,4 +46,9 @@ body {
     left: 30%;
     top: 20%;
   }
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
 }
