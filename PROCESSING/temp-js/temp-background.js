@@ -1,10 +1,10 @@
-const toDoBG = document.querySelector(".header");
+const frameBg = document.querySelector(".js-frameBg");
 const IMG_NUMBER = 6;
 
 function paintImage(imgNumber) {
   const image = new Image();
   image.src = `/images/${imgNumber + 1}.jpg`;
-  toDoBG.appendChild(image);
+  frameBg.appendChild(image);
   image.classList.add("bgImage");
 }
 

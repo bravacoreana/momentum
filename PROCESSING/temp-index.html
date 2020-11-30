@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="temp-css/temp-style.css" />
     <link rel="stylesheet" href="temp-css/temp-todolist.css" />
     <link rel="stylesheet" href="temp-css/temp-clock.css" />
+    <link rel="stylesheet" href="temp-css/temp-modal.css" />
+    <link rel="stylesheet" href="temp-css/temp-greeting.css" />
+    <link rel="stylesheet" href="temp-css/temp-frameBg.css" />
   </head>
   <body>
     <header>
@@ -24,9 +27,9 @@
     </header>
     <div class="main">
       <div class="frames">
+        <div class="js-frameBg frame"></div>
         <div class="frame">A</div>
-        <div class="frame">A</div>
-        <div class="frame">A</div>
+        <div class="js-greeting greeting frame"></div>
       </div>
       <div class="container-todolist">
         <!-- <div class="header"></div> -->
@@ -51,7 +54,24 @@
       </div>
     </div>
 
+    <div class="modal-bg">
+      <div class="modal">
+        <h2 class="modal-header">Your Name will be displayed!</h2>
+        <form class="js-greetingForm modalForm">
+          <input
+            type="text"
+            placeholder="What is your name?"
+            class="modal-input"
+          />
+        </form>
+        <button class="modal-btn">Start</button>
+        <span class="modal-close">X</span>
+      </div>
+    </div>
+
     <script src="temp-js/temp-todolist.js"></script>
     <script src="temp-js/temp-clock.js"></script>
+    <script src="temp-js/temp-background.js"></script>
+    <script src="temp-js/temp-modal.js"></script>
   </body>
 </html>
