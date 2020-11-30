@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap");
+
+header {
+  padding-top: 30px;
+}
+
+.clock .clock-now {
+  font-size: 50px;
+  font-family: "Quantico", sans-serif;
+}

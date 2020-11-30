@@ -4,6 +4,10 @@ body {
   background-image: url("/images/background-16-9.png");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .main {
