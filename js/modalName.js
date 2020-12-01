@@ -15,17 +15,20 @@ function saveName(text) {
 }
 
 function closeModal() {
-  alert("You can change your name on setting");
+  // alert("You can change your name on setting");
   modalBg.classList.remove("modal-active");
   paintGreeting("Voldemort");
 }
 
-function handleSubmit(event) {
-  event.preventDefault();
+function handleSubmit() {
   const currentValue = modalInput.value;
-  modalBg.classList.remove("modal-active");
-  paintGreeting(currentValue);
-  saveName(currentValue);
+  if (currentValue === "") {
+    closeModal();
+  } else {
+    modalBg.classList.remove("modal-active");
+    paintGreeting(currentValue);
+    saveName(currentValue);
+  }
 }
 
 function askForName() {

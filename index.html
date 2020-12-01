@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="setting-btns">
+      <div class="setting-btn">
+        <i class="fas fa-cog"></i>
+      </div>
+    </div>
+
+    <!-- MAIN PAGE -->
     <header>
       <div class="js-clock clock">
         <span class="js-clock-now clock-now">00:00</span>
@@ -20,14 +27,40 @@
       </div>
     </header>
     <div class="main">
+      <!-- FRAMES -->
       <div class="frames">
         <div class="js-frameBg frame"></div>
         <div class="frame">A</div>
-        <div class="js-greeting greeting frame"></div>
+        <div class="js-greeting greeting frame">
+          <span>Hello</span>
+        </div>
       </div>
+      <!-- CALENDAR -->
+      <div class="container-calendar">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left previous-month"></i>
+            <div class="today">
+              <h1></h1>
+              <!-- <p></p> -->
+            </div>
+            <i class="fas fa-angle-right next-month"></i>
+          </div>
+          <div class="weekdays">
+            <div class="weekday">Mon</div>
+            <div class="weekday">Tue</div>
+            <div class="weekday">Wed</div>
+            <div class="weekday">Thu</div>
+            <div class="weekday">Fri</div>
+            <div class="weekday">Sat</div>
+            <div class="weekday">Sun</div>
+          </div>
+          <div class="dates"></div>
+        </div>
+      </div>
+
+      <!-- TO DO LIST -->
       <div class="container-todolist">
-        <!-- <div class="header"></div> -->
-        <!-- <div id="date"></div> -->
         <div class="content">
           <ul id="list"></ul>
         </div>
@@ -55,16 +88,39 @@
       </div>
     </div>
 
-    <!--MODAL : SETTING -->
-    <div class="setting">
+    <!--DARK MODE-->
+    <!-- <div class="darkmode-checkbox">
+      <input type="checkbox" class="darkmode-checkbox__input" id="checkbox" />
+      <label for="checkbox" class="darkmode-checkbox__label">
+        <i class="fas fa-moon"></i>
+        <div class="darkmode-togglebutton"></div>
+      </label>
+    </div> -->
+    <!-- MODAL : SETTING 
+    <div class="modal-settingBg">
       <div class="modal-setting">
-        <i class="fas fa-cog"></i>
+        <div class="setting-btn">
+          <i class="fas fa-cog"></i>
+        </div>
+        <h2 class="setting-header">SETTINGS</h2>
+        <label for="name">
+          You can change your name
+          <input type="text" class="modal-changeName" />
+        </label>
+        <label for="value">
+          Dark Mode
+          <div class="setting-toggle">darkmode</div>
+        </label>
       </div>
     </div>
+  -->
 
     <script src="js/todolist.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/frameBg.js"></script>
     <script src="js/modalName.js"></script>
+    <script src="js/setting.js"></script>
+    <script src="js/darkmode.js"></script>
+    <script src="js/calendar.js"></script>
   </body>
 </html>

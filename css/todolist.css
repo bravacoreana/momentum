@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300;400&display=swap");
 .container-todolist {
   height: 300px;
   width: 300px;
@@ -5,7 +6,7 @@
   flex-direction: column;
   position: absolute;
   border: 1px solid black;
-  right: 500px;
+  right: 10%;
   background-color: rgb(235, 235, 235);
 }
 
@@ -57,6 +58,9 @@
   overflow-y: auto;
   background-color: rgb(235, 235, 235);
   padding: 10px 0px;
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 ul#list {
@@ -92,7 +96,7 @@ li.item > span.line-through {
   text-decoration: line-through;
 }
 
-@media screen and (max-width: 1800px) {
+/* @media screen and (max-width: 1800px) {
   .container-todolist {
     right: 100px;
     top: 200px;
@@ -104,4 +108,4 @@ li.item > span.line-through {
     right: 20%;
     top: 20%;
   }
-}
+} */

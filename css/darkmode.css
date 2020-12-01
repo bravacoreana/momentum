@@ -1,0 +1,50 @@
+.darkmode-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background 0.2s linear;
+}
+
+.darkmode-checkbox.darkmode {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.darkmode-checkbox__input {
+  opacity: 0;
+  position: absolute;
+}
+
+.darkmode-checkbox__label {
+  background-color: #111;
+  width: 42px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 3px;
+  position: relative;
+}
+
+.darkmode-checkbox__label .fa-moon {
+  color: yellow;
+}
+
+.darkmode-togglebutton {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.2s ease-in-out;
+}
+
+.darkmode-checkbox__input:checked + .darkmode-checkbox__label .darkmode-togglebutton {
+  transform: translateX(22px);
+}

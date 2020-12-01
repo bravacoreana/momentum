@@ -6,11 +6,14 @@
 @import "css/greeting.css";
 @import "css/modal-name.css";
 @import "css/todolist.css";
+@import "css/setting.css";
+@import "css/darkmode.css";
+@import "css/calendar.css";
 
 body {
   min-width: 1024px;
   min-height: 1024px;
-  background-image: url("/images/background/background-16-9.png");
+  background-image: url("images/background/background-16-9.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
