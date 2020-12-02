@@ -1,3 +1,4 @@
+// ARRAYS
 const months = [
   "January",
   "February",
@@ -12,21 +13,21 @@ const months = [
   "November",
   "December",
 ];
+
+const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+
+// VARIABLES
 let currentDate = new Date(); //Tue Dec 01 2020 16:43:43 GMT+0100 (Central European Standard Time)
 let currentDay = currentDate.getDate(); //1
 let currentMonthIndex = currentDate.getMonth(); //11
 let currentYear = currentDate.getFullYear(); //2020
 
-//DOM
+// DOM
 const dates = document.querySelector(".dates");
 const month = document.querySelector(".today h1");
 let prevMonth = document.querySelector(".previous-month");
 let nextMonth = document.querySelector(".next-month");
-
-month.textContent = `${months[currentMonthIndex]}, ${currentYear}`;
-
-prevMonth.addEventListener("click", () => lastMonth());
-nextMonth.addEventListener("click", () => followingMonth());
+const weekdays = document.querySelector(".weekdays");
 
 function paintMonth(month) {
   for (let i = startDay(); i > 0; i--) {
@@ -39,6 +40,15 @@ function paintMonth(month) {
       dates.innerHTML += `<div class="date">${i}</div>`;
     }
   }
+  for (let i = 1; i <= lastDay(); i++) {
+    dates.innerHTML += `<div class="next-date">${i}</div>`;
+  }
+}
+
+function lastDay() {
+  const lastDateOfMonth = new Date(currentYear, currentMonthIndex + 1, 0);
+  const previewNextDays = 7 - lastDateOfMonth.getDay();
+  return previewNextDays === 7 ? 0 : previewNextDays;
 }
 
 function getDaysOfMonth(month) {
@@ -97,7 +107,18 @@ function setNewDate() {
   paintMonth(currentMonthIndex);
 }
 
+function setDays() {
+  for (weekday of days) {
+    weekdays.innerHTML += `<div class="weekday">${weekday}</div>`;
+  }
+}
+
 function init() {
   paintMonth(currentMonthIndex);
+  prevMonth.addEventListener("click", () => lastMonth());
+  nextMonth.addEventListener("click", () => followingMonth());
+  month.textContent = `${months[currentMonthIndex]}, ${currentYear}`;
+  setDays();
+  lastDay();
 }
 init();
