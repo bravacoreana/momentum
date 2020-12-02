@@ -1,6 +1,6 @@
 .weather {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 1.5em;
+  left: 1em;
   color: #ededed;
 }

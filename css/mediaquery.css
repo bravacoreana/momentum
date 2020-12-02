@@ -1,0 +1,53 @@
+/*
+1600px
+1824px
+2100px;
+*/
+
+@media screen and (min-width: 1600px) {
+  .frames {
+    width: 29em;
+    height: 29em;
+  }
+  .frame:nth-child(1) {
+    width: 16em;
+    height: 12em;
+  }
+  .frame:nth-child(2),
+  .frame:nth-child(3) {
+    width: 192px;
+    height: 256px;
+  }
+  .greeting {
+    font-size: 62px;
+  }
+
+  .calendar {
+    width: 21em;
+    height: 18em;
+    right: 10em;
+    top: 7em;
+  }
+
+  .container-todolist {
+    width: 21em;
+    height: 24em;
+    top: 12em;
+    right: 5.6em;
+  }
+}
+
+@media screen and (min-width: 2100px) {
+  .calendar {
+    width: 24em;
+    height: 21em;
+    top: 2em;
+    right: 15em;
+  }
+  .container-todolist {
+    width: 24em;
+    height: 27em;
+    top: 10em;
+    right: 12em;
+  }
+}

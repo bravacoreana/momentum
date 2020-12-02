@@ -4,30 +4,55 @@
 @import "css/clock.css";
 @import "css/frame-bg.css";
 @import "css/greeting.css";
-@import "css/modal-name.css";
+@import "css/calendar.css";
 @import "css/todolist.css";
+@import "css/weather.css";
+@import "css/modal-name.css";
+@import "css/mediaquery.css";
+/*
+
+
+
 @import "css/setting.css";
 @import "css/darkmode.css";
-@import "css/calendar.css";
-@import "css/weather.css";
+
+ */
 
 body {
-  min-width: 1024px;
-  min-height: 1024px;
+  height: 100%;
+  width: 100%;
   background-image: url("images/background/background-16-9.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-.main {
+main {
   width: 100%;
-  height: 1024px;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.container-background {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container-maincomponent {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
+  top: -5em;
 }

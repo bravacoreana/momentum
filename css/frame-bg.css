@@ -1,51 +1,39 @@
 .frames {
-  width: 500px;
-  height: 500px;
+  width: 352px;
+  height: 352px;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 25%;
+  left: 35%;
+  transition: all 0.3s ease-in-out;
 }
-
 .frame {
-  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
 }
 
 .frame:nth-child(1) {
-  width: 240px;
-  height: 160px;
-  border: 15px solid black;
-  left: 0px;
-  top: 0px;
+  border: 12px solid black;
+  width: 12em;
+  height: 9em;
 }
 
 .frame:nth-child(2) {
-  width: 160px;
-  height: 240px;
-  border: 15px solid black;
-  left: 285px;
-  top: 50px;
+  border: 12px solid black;
+  width: 9em;
+  height: 12em;
+  position: absolute;
+  top: 2.5em;
+  right: -3em;
 }
 
 .frame:nth-child(3) {
-  width: 160px;
-  height: 240px;
-  border: 15px solid black;
-  left: 80px;
-  bottom: 30px;
-}
-@media screen and (max-width: 1800px) {
-  .frames {
-    left: 550px;
-    top: 200px;
-  }
-}
-
-@media screen and (min-width: 1800px) {
-  .frames {
-    left: 30%;
-    top: 20%;
-  }
+  border: 12px solid black;
+  width: 144px; /*em to px due to font-size*/
+  height: 192px;
+  position: absolute;
+  bottom: -1.1em;
+  left: 0.75em;
 }
 
 .bgImage {

@@ -1,34 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 .container-calendar {
-  margin: 0;
-  height: 100%;
-  width: 100%;
   font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
-  /* background-color: rgb(235, 235, 235); */
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 0;
-  left: 0;
+  left: 15em;
+  top: -15em;
+  transition: all 0.5s;
 }
 
 .calendar {
-  width: 300px;
-  height: 280px;
+  width: 18em;
+  height: 15em;
   background-color: rgb(235, 235, 235);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 80px;
-  right: 10%;
+  top: 10em;
+  right: 10em;
   border: 1px solid black;
+  transition: all 0.3s ease-in-out;
 }
 
 .month {
   width: 100%;
-  height: 50px;
+  height: 15%;
   background-color: #d8d8d8;
   display: flex;
   justify-content: space-between;
@@ -85,7 +83,6 @@
 .dates div:hover:not(.today) {
   background-color: rgba(0, 153, 207, 0.2);
   cursor: pointer;
-  /* border-radius: 50%; */
 }
 
 .dates .previous-date,
@@ -96,5 +93,4 @@
 .dates .today {
   background-color: rgba(0, 153, 207, 0.5);
   color: white;
-  /* border-radius: 50%; */
 }

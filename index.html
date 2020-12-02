@@ -20,55 +20,58 @@
     </div> -->
 
     <!-- MAIN PAGE -->
-    <header>
-      <div class="js-clock clock">
-        <span class="js-clock-now clock-now">00:00</span>
-      </div>
-    </header>
-    <div class="main">
-      <!-- FRAMES -->
-      <div class="frames">
-        <div class="js-frameBg frame"></div>
-        <div class="js-frameBgVt frame"></div>
-        <div class="js-greeting greeting frame">
-          <div>Hello</div>
+    <!-- <header></header> -->
+    <main>
+      <div class="container-background">
+        <div class="js-clock clock">
+          <span class="js-clock-now clock-now">00:00</span>
+        </div>
+        <!-- FRAMES -->
+        <div class="frames">
+          <div class="js-frameBg frame"></div>
+          <div class="js-frameBgVt frame"></div>
+          <div class="js-greeting greeting frame">
+            <!-- <div></div> -->
+          </div>
         </div>
       </div>
       <!-- CALENDAR -->
-      <div class="container-calendar">
-        <div class="calendar">
-          <div class="month">
-            <i class="fas fa-angle-left previous-month"></i>
-            <div class="today">
-              <h1></h1>
-              <!-- <p></p> -->
+      <div class="container-maincomponent">
+        <div class="container-calendar">
+          <div class="calendar">
+            <div class="month">
+              <i class="fas fa-angle-left previous-month"></i>
+              <div class="today">
+                <h1></h1>
+              </div>
+              <i class="fas fa-angle-right next-month"></i>
             </div>
-            <i class="fas fa-angle-right next-month"></i>
+            <div class="weekdays"></div>
+            <div class="dates"></div>
           </div>
-          <div class="weekdays"></div>
-          <div class="dates"></div>
         </div>
-      </div>
-
-      <!-- TO DO LIST -->
-      <div class="container-todolist">
-        <div class="content">
-          <ul id="list"></ul>
-        </div>
-        <div class="add-to-do">
-          <i class="fas fa-plus"></i>
-          <form id="inputform">
-            <input type="text" id="inputToDo" placeholder="Enter a thing to do" autocomplete="off" />
-          </form>
-          <div class="clear">
-            <i class="fas fa-hand-sparkles"></i>
+        <!-- TO DO LIST -->
+        <div class="container-todolist">
+          <div class="content">
+            <ul id="list"></ul>
+          </div>
+          <div class="add-to-do">
+            <i class="fas fa-plus"></i>
+            <form id="inputform">
+              <input type="text" id="inputToDo" placeholder="Enter a thing to do" autocomplete="off" />
+            </form>
+            <div class="clear">
+              <i class="fas fa-hand-sparkles"></i>
+            </div>
           </div>
         </div>
       </div>
+    </main>
+    <div class="container-weather">
+      <div class="js-weather weather"></div>
     </div>
-    <div class="js-weather weather"></div>
     <!--MODAL : ASK FOR NAME -->
-    <div class="modal-bg">
+    <!-- <div class="modal-bg">
       <div class="modal">
         <h2 class="modal-header">Your Name will be displayed!</h2>
         <form class="js-greetingForm modalForm">
@@ -77,18 +80,19 @@
         <button class="modal-btn">Start</button>
         <span class="modal-close">X</span>
       </div>
-    </div>
+    </div> -->
 
-    <!--DARK MODE-->
-
-    <div class="darkmode-btn">
+    <!--DARK MODE -->
+    <!-- <div class="darkmode-btn">
       <input type="checkbox" class="darkmode-checkbox__input" id="checkbox" />
       <label for="checkbox" class="darkmode-checkbox__label">
         <i class="fas fa-moon"></i>
         <div class="darkmode-togglebutton"></div>
       </label>
-    </div>
-    <!-- MODAL : SETTING -->
+    </div> -->
+    <!-- DARK MODE END -->
+
+    <!-- SETTING START-->
     <!-- <div class="js-settingBg">
       <div class="js-setting">
         <div class="setting-btn js-settingClose">
@@ -111,14 +115,21 @@
         </div>
       </div>
     </div> -->
+    <!-- SETTING END-->
 
-    <script src="js/todolist.js"></script>
-    <script src="js/clock.js"></script>
     <script src="js/frameBg.js"></script>
+    <script src="js/clock.js"></script>
     <script src="js/modalName.js"></script>
-    <!-- <script src="js/setting.js"></script> -->
-    <script src="js/darkmode.js"></script>
     <script src="js/calendar.js"></script>
+    <script src="js/todolist.js"></script>
     <script src="js/weather.js"></script>
+    <!-- 
+    
+    
+    
+    <script src="js/setting.js"></script>
+    <script src="js/darkmode.js"></script>
+    
+    -->
   </body>
 </html>
