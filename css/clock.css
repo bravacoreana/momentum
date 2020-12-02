@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap");
 @font-face {
   font-family: "LAB디지털";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
-    format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,7 +11,7 @@ header {
 }
 
 .clock .clock-now {
-  font-size: 50px;
+  font-size: 60px;
   /* font-family: "Quantico", sans-serif; */
   font-family: "LAB디지털";
 }
