@@ -4,9 +4,7 @@ const API_KEY = "bece0ff257e3fa1c84f731009f9cfab2";
 const COORDS = "coords";
 
 function getWeather(lat, lon) {
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`
-  )
+  fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`)
     .then(function (response) {
       return response.json();
     })
@@ -14,9 +12,9 @@ function getWeather(lat, lon) {
       const temperature = json.main.temp;
       const place = json.name;
       const temperatureFeels = json.main.feels_like;
-      weather.innerText = `Temp ${temperature}℃ @ ${place} 
-                                 Feels like:  ${temperatureFeels}`;
-      // console.log(json);
+      weather.innerText = `@${place}
+      Temperature:  ${temperature}℃ 
+      Feels like:   ${temperatureFeels}℃`;
     });
   // fetch : get data
 }

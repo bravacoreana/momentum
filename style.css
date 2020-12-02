@@ -9,6 +9,7 @@
 @import "css/setting.css";
 @import "css/darkmode.css";
 @import "css/calendar.css";
+@import "css/weather.css";
 
 body {
   min-width: 1024px;
