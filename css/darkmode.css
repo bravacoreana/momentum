@@ -1,6 +1,12 @@
-.darkmode-checkbox {
+.darkmode-on {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* .darkmode-checkbox {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   margin: 0;
   flex-direction: column;
@@ -10,11 +16,17 @@
   left: 0;
   top: 0;
   transition: background 0.2s linear;
+} */
+
+.darkmode-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-.darkmode-checkbox.darkmode {
+/* .darkmode-checkbox.darkmode {
   background-color: rgba(0, 0, 0, 0.4);
-}
+} */
 
 .darkmode-checkbox__input {
   opacity: 0;

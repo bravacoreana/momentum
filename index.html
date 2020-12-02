@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="setting-btns">
+    <!-- <div class="setting-btns">
       <div class="setting-btn">
-        <i class="fas fa-cog"></i>
+        <i class="fas fa-cog js-settingOpen"></i>
       </div>
-    </div>
+    </div> -->
 
     <!-- MAIN PAGE -->
     <header>
@@ -80,37 +80,43 @@
     </div>
 
     <!--DARK MODE-->
-    <!-- <div class="darkmode-checkbox">
+
+    <div class="darkmode-btn">
       <input type="checkbox" class="darkmode-checkbox__input" id="checkbox" />
       <label for="checkbox" class="darkmode-checkbox__label">
         <i class="fas fa-moon"></i>
         <div class="darkmode-togglebutton"></div>
       </label>
-    </div> -->
-    <!-- MODAL : SETTING 
-    <div class="modal-settingBg">
-      <div class="modal-setting">
-        <div class="setting-btn">
+    </div>
+    <!-- MODAL : SETTING -->
+    <!-- <div class="js-settingBg">
+      <div class="js-setting">
+        <div class="setting-btn js-settingClose">
           <i class="fas fa-cog"></i>
         </div>
-        <h2 class="setting-header">SETTINGS</h2>
-        <label for="name">
-          You can change your name
-          <input type="text" class="modal-changeName" />
-        </label>
-        <label for="value">
-          Dark Mode
-          <div class="setting-toggle">darkmode</div>
-        </label>
+        <div class="setting-content">
+          <h2 class="setting-header">SETTINGS</h2>
+          <label for="name" class="setting__name">Name</label>
+          <input type="text" class="js-changeName" />
+          <label for="value" class="setting__mode">Dark Mode</label>
+          <div class="setting-darkmode">
+            <div class="darkmode-checkbox">
+              <input type="checkbox" class="darkmode-checkbox__input" id="checkbox" />
+              <label for="checkbox" class="darkmode-checkbox__label">
+                <i class="fas fa-moon"></i>
+                <div class="darkmode-togglebutton"></div>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  -->
+    </div> -->
 
     <script src="js/todolist.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/frameBg.js"></script>
     <script src="js/modalName.js"></script>
-    <script src="js/setting.js"></script>
+    <!-- <script src="js/setting.js"></script> -->
     <script src="js/darkmode.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/weather.js"></script>
