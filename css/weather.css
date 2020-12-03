@@ -1,6 +1,8 @@
 .weather {
   position: absolute;
   bottom: 1.5em;
-  left: 1em;
+  left: 7em;
   color: #ededed;
+  font-size: 13px;
+  font-family: "Ubuntu", sans-serif;
 }
