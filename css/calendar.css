@@ -1,25 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-
 .container-calendar {
   font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: 15em;
-  top: -15em;
   transition: all 0.5s;
 }
 
 .calendar {
-  width: 18em;
-  height: 15em;
+  width: 250px;
+  height: 200px;
   background-color: rgb(235, 235, 235);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 10em;
-  right: 10em;
+  top: 20px;
+  right: 30px;
   border: 1px solid black;
   transition: all 0.3s ease-in-out;
 }
@@ -39,10 +34,8 @@
   margin: 0px 10px;
 }
 
-.month p {
+.month h1 {
   font-size: 13px;
-  margin: 3px 0px;
-  text-transform: uppercase;
 }
 
 .weekdays {
@@ -50,12 +43,12 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.5px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .weekday {
   width: calc(100% / 7);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: lighter;
   display: flex;
   justify-content: center;
@@ -71,8 +64,8 @@
 }
 
 .dates div {
-  font-size: 14px;
-  padding: 8px 0px;
+  font-size: 11px;
+  padding: 4px 0px;
   margin: 1px 5px;
   width: calc(100% / 7 - 10px);
   text-align: center;

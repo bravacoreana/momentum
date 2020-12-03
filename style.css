@@ -8,52 +8,38 @@
 @import "css/todolist.css";
 @import "css/weather.css";
 @import "css/modal-name.css";
-@import "css/mediaquery.css";
-/*
-
-
-
-@import "css/setting.css";
 @import "css/darkmode.css";
+/*@import "css/setting.css";
+@import "css/mediaquery.css";*/
 
- */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap");
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 body {
   height: 100vh;
-  width: 100%;
-  background-image: url("images/background/background-16-9.png");
+  width: 100vw;
+  background-image: url("images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+}
+.container.darkmode {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-}
-
-.container-background {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.container-maincomponent {
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: -5em;
 }

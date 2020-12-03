@@ -13,16 +13,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- <div class="setting-btns">
-      <div class="setting-btn">
-        <i class="fas fa-cog js-settingOpen"></i>
+    <div class="container">
+      <!--DARK MODE -->
+      <div class="darkmodeBg">
+        <div class="darkmode-checkbox">
+          <input type="checkbox" class="checkbox__input" id="checkbox" />
+          <label for="checkbox"></label>
+        </div>
       </div>
-    </div> -->
-
-    <!-- MAIN PAGE -->
-    <!-- <header></header> -->
-    <main>
-      <div class="container-background">
+      <!-- DARK MODE END-->
+      <main>
         <div class="js-clock clock">
           <span class="js-clock-now clock-now">00:00</span>
         </div>
@@ -34,9 +34,7 @@
             <!-- <div></div> -->
           </div>
         </div>
-      </div>
-      <!-- CALENDAR -->
-      <div class="container-maincomponent">
+        <!-- CALENDAR -->
         <div class="container-calendar">
           <div class="calendar">
             <div class="month">
@@ -65,35 +63,24 @@
             </div>
           </div>
         </div>
+      </main>
+      <div class="container-weather">
+        <div class="js-weather weather"></div>
       </div>
-    </main>
-    <div class="container-weather">
-      <div class="js-weather weather"></div>
-    </div>
-    <!--MODAL : ASK FOR NAME -->
-    <div class="modal-bg">
-      <div class="modal">
-        <h2 class="modal-header">Your Name will be displayed!</h2>
-        <form class="js-greetingForm modalForm">
-          <input type="text" placeholder="What is your name?" class="modal-input" />
-        </form>
-        <button class="modal-btn">Start</button>
-        <span class="modal-close">X</span>
+      <!--MODAL : ASK FOR NAME -->
+      <div class="modal-bg">
+        <div class="modal">
+          <h2 class="modal-header">Your Name will be displayed!</h2>
+          <form class="js-greetingForm modalForm">
+            <input type="text" placeholder="What is your name?" class="modal-input" />
+          </form>
+          <button class="modal-btn">Start</button>
+          <span class="modal-close">X</span>
+        </div>
       </div>
-    </div>
 
-    <!--DARK MODE -->
-    <!-- <div class="darkmode-btn">
-      <input type="checkbox" class="darkmode-checkbox__input" id="checkbox" />
-      <label for="checkbox" class="darkmode-checkbox__label">
-        <i class="fas fa-moon"></i>
-        <div class="darkmode-togglebutton"></div>
-      </label>
-    </div> -->
-    <!-- DARK MODE END -->
-
-    <!-- SETTING START-->
-    <!-- <div class="js-settingBg">
+      <!-- SETTING START-->
+      <!-- <div class="js-settingBg">
       <div class="js-setting">
         <div class="setting-btn js-settingClose">
           <i class="fas fa-cog"></i>
@@ -115,21 +102,22 @@
         </div>
       </div>
     </div> -->
-    <!-- SETTING END-->
-
-    <script src="js/frameBg.js"></script>
+      <!-- SETTING END-->
+    </div>
     <script src="js/clock.js"></script>
+    <script src="js/frameBg.js"></script>
     <script src="js/modalName.js"></script>
     <script src="js/calendar.js"></script>
     <script src="js/todolist.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/darkmode.js"></script>
     <!-- 
     
     
     
-    <script src="js/setting.js"></script>
-    <script src="js/darkmode.js"></script>
     
-    -->
+    
+      
+    <script src="js/setting.js"></script> -->
   </body>
 </html>
