@@ -9,6 +9,7 @@
 .frame {
   width: 100%;
   height: 100%;
+  background-color: rgb(235, 235, 235);
 }
 
 .frame:nth-child(1) {
@@ -54,6 +55,10 @@
 
 .bgImage.imgDM {
   filter: brightness(40%);
+}
+
+.frameDM.DM {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 1366px) {
