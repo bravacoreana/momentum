@@ -4,7 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 .calendar {
@@ -13,10 +15,9 @@
   background-color: rgb(235, 235, 235);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 20px;
-  right: 30px;
+  right: 5%;
+  top: 10%;
   border: 1px solid black;
-  transition: all 0.3s ease-in-out;
 }
 
 .month {
@@ -70,7 +71,7 @@
   width: calc(100% / 7 - 10px);
   text-align: center;
   color: #616161;
-  transition: background-color 0.15s linear;
+  /* transition: background-color 0.15s linear; */
 }
 
 .dates div:hover:not(.today) {
@@ -86,4 +87,76 @@
 .dates .today {
   background-color: rgba(0, 153, 207, 0.5);
   color: white;
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  .calendar {
+    width: 280px;
+    height: 210px;
+  }
+  .month h1 {
+    font-size: 0.95em;
+  }
+  .weekday {
+    font-size: 0.8em;
+  }
+  .dates div {
+    font-size: 0.75em;
+    padding: 4px 0px;
+    margin: 2px 5px;
+  }
+}
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
+  .calendar {
+    width: 300px;
+    height: 240px;
+  }
+  .month h1 {
+    font-size: 0.95em;
+  }
+  .weekday {
+    font-size: 0.8em;
+  }
+  .dates div {
+    font-size: 0.75em;
+    padding: 4px 0px;
+    margin: 4px 5px;
+  }
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2560px) {
+  .calendar {
+    width: 300px;
+    height: 240px;
+  }
+  .month h1 {
+    font-size: 0.95em;
+  }
+  .weekday {
+    font-size: 0.8em;
+  }
+  .dates div {
+    font-size: 0.75em;
+    padding: 4px 0px;
+    margin: 4px 5px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .calendar {
+    right: 6%;
+    width: 300px;
+    height: 240px;
+  }
+  .month h1 {
+    font-size: 0.95em;
+  }
+  .weekday {
+    font-size: 0.8em;
+  }
+  .dates div {
+    font-size: 0.75em;
+    padding: 4px 0px;
+    margin: 4px 5px;
+  }
 }

@@ -3,7 +3,9 @@
 1824px
 2100px;
 */
+/* @media screen and (max-width: 1440px) {
 
+}
 @media screen and (min-width: 1600px) {
   .frames {
     width: 29em;
@@ -18,17 +20,12 @@
     width: 192px;
     height: 256px;
   }
-  .greeting {
-    font-size: 62px;
-  }
-
   .calendar {
     width: 21em;
     height: 18em;
     right: 10em;
     top: 7em;
   }
-
   .container-todolist {
     width: 21em;
     height: 24em;
@@ -50,4 +47,4 @@
     top: 10em;
     right: 12em;
   }
-}
+} */

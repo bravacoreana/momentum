@@ -3,8 +3,8 @@
 
 .darkmode-checkbox {
   position: absolute;
-  top: 300px;
-  left: 75px;
+  top: 30px;
+  left: 30px;
   width: 40px;
   height: 60px;
   background-color: #bbb;
@@ -103,3 +103,21 @@
   text-shadow: none;
   z-index: 4;
 }
+
+/* @media screen and (max-width: 1440px) {
+  .darkmode-checkbox {
+    top: 400px;
+    left: 75px;
+    width: 40px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 2560px) {
+  .darkmode-checkbox {
+    position: absolute;
+    top: 650px;
+    left: 85px;
+    width: 40px;
+    height: 60px;
+  }
+} */
