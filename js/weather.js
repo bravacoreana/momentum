@@ -1,3 +1,4 @@
+const weatherContainer = document.querySelector(".container-weather");
 const weather = document.querySelector(".js-weather");
 
 const API_KEY = "bece0ff257e3fa1c84f731009f9cfab2";
@@ -12,9 +13,11 @@ function getWeather(lat, lon) {
       const temperature = json.main.temp;
       const place = json.name;
       const temperatureFeels = json.main.feels_like;
-      weather.innerText = `@${place}
-      Temperature:  ${temperature}℃ 
-      Feels like:   ${temperatureFeels}℃`;
+      weather.innerText = `@${place}\nTemperature:  ${temperature}℃\nFeels like:   ${temperatureFeels}℃`;
+
+      const weatherImage = new Image();
+      weatherImage.src = `http://openweathermap.org/img/wn/${json.weather[0].icon}.png`;
+      weatherContainer.insertBefore(weatherImage, weather);
     });
   // fetch : get data
 }

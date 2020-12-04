@@ -1,7 +1,10 @@
-.weather {
+.container-weather {
+  display: flex;
   position: absolute;
   bottom: 10px;
   left: 10px;
+}
+.weather {
   color: #ededed;
   font-size: 13px;
   font-family: "Ubuntu", sans-serif;
