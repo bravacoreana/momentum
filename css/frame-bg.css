@@ -4,12 +4,12 @@
   position: absolute;
   top: 20%;
   left: 35%;
-  transition: all 0.3s ease-in-out;
 }
 .frame {
   width: 100%;
   height: 100%;
   background-color: rgb(235, 235, 235);
+  transition: opacity 0.3s ease-in-out;
 }
 
 .frame:nth-child(1) {
@@ -61,10 +61,13 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (max-width: 1366px) {
-  .frames {
+@media screen and (max-width: 930px) {
+  .frame {
     opacity: 0;
   }
+}
+
+@media screen and (max-width: 1366px) {
   .greeting {
     font-family: "Fira Sans", sans-serif;
     font-weight: 600;
