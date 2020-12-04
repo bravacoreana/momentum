@@ -10,6 +10,11 @@
   height: 100%;
   background-color: rgb(235, 235, 235);
   transition: opacity 0.3s ease-in-out;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.frameDM.darkmode {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .frame:nth-child(1) {
@@ -53,12 +58,8 @@
   transition: background-color 0.5s linear;
 }
 
-.bgImage.imgDM {
+.bgImage.darkmode {
   filter: brightness(40%);
-}
-
-.frameDM.DM {
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 930px) {

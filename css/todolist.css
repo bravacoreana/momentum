@@ -1,4 +1,4 @@
-.todolist-container {
+.container-todolist {
   width: 100vw;
   height: 100vh;
   box-sizing: border-box;
@@ -9,44 +9,64 @@
   height: 300px;
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   position: absolute;
   right: 5%;
   top: 45%;
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(252, 251, 249, 1);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  /* transition: all 0.3s ease-in-out; */
+}
+
+.todolist.darkmode {
+  background-color: rgba(252, 251, 249, 0.5);
+}
+
+.content {
+  height: 100%;
+  overflow-y: auto;
+  background-color: ;
+  padding: 10px 0px;
+  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .add-to-do {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  background-color: #d8d8d8;
+  padding: 4px 0px;
+  background-color: rgba(246, 243, 238, 1);
 }
+
+.add-to-do.darkmode {
+  background-color: rgba(246, 243, 238, 0.3);
+}
+
 .add-to-do .fa-plus {
   position: absolute;
   left: 10px;
 }
 
-.add-to-do .fa-plus:hover {
-  cursor: pointer;
-}
-
 .add-to-do input {
   width: 90%;
   border: none;
-  padding: 5px 8px;
-  background-color: #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
+  padding: 5px;
+  margin: 0px 22px;
+  background-color: rgba(246, 243, 238, 1);
+  border-bottom: 1px solid rgba(246, 243, 238, 1);
   transition: border-bottom 0.3s linear;
   position: relative;
-  left: -10px;
+  left: -20px;
+}
+
+.add-to-do input.darkmode {
+  background-color: rgba(246, 243, 238, 0.3);
+  border-bottom: 1px solid rgba(246, 243, 238, 0.3);
 }
 
 .add-to-do input:focus {
   outline: none;
+  border-bottom: 1px solid rgba(201, 173, 133, 0.5);
 }
 .add-to-do .clear {
   position: absolute;
@@ -67,16 +87,6 @@
   }
 }
 
-.content {
-  height: 100%;
-  overflow-y: auto;
-  background-color: rgb(235, 235, 235);
-  padding: 10px 0px;
-  font-family: "Noto Sans", "Noto Sans KR", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
 ul#list {
   list-style-type: none;
   padding-left: 0;
@@ -86,8 +96,12 @@ li.item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0px 20px;
+  border-bottom: 1px solid rgba(201, 173, 133, 0.3);
+  padding: 2px 20px;
+}
+
+li.item.darkmode {
+  border-bottom: 1px solid rgba(246, 243, 238, 0.3);
 }
 
 li.item .fa-circle:hover,
@@ -97,7 +111,7 @@ li.item .fa-trash-alt:hover {
 }
 
 li.item .fa-check-circle {
-  color: green;
+  color: rgba(0, 153, 207, 0.8);
 }
 
 li.item > span.text {

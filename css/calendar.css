@@ -12,18 +12,20 @@
 .calendar {
   width: 250px;
   height: 200px;
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(252, 251, 249, 1);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   position: absolute;
   right: 5%;
   top: 10%;
-  border: 1px solid black;
+}
+
+.calendarDM.darkmode {
+  background-color: rgba(252, 251, 249, 0.5);
 }
 
 .month {
   width: 100%;
   height: 15%;
-  background-color: #d8d8d8;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +73,6 @@
   width: calc(100% / 7 - 10px);
   text-align: center;
   color: #616161;
-  /* transition: background-color 0.15s linear; */
 }
 
 .dates div:hover:not(.today) {
