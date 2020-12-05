@@ -15,7 +15,7 @@
 
 .modal {
   background-color: #dfd2b8;
-  width: 400px;
+  width: 300px;
   height: 250px;
   display: flex;
   justify-content: center;
@@ -43,7 +43,7 @@
 }
 .modal-btn {
   border: none;
-  padding: 5px 10px;
+  padding: 7px 10px;
   margin-top: 10px;
   border-radius: 5px;
 }

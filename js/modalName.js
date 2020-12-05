@@ -33,6 +33,11 @@ function handleSubmit() {
 
 function askForName() {
   modalBg.classList.add("modal-active");
+  modalInput.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+      handleSubmit();
+    }
+  });
   modalBtn.addEventListener("click", handleSubmit);
   modalClose.addEventListener("click", closeModal);
 }

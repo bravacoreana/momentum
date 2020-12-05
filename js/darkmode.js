@@ -9,6 +9,7 @@ function darkmode() {
   document.querySelector(".calendarDM").classList.toggle("darkmode");
   todoLists.forEach((todoList) => todoList.classList.toggle("darkmode"));
   bgImage.forEach((bgImg) => bgImg.classList.toggle("darkmode"));
+  document.querySelector(".content").classList.toggle("darkmode");
   document.querySelector(".add-to-do input").classList.toggle("darkmode");
   todoListItems.forEach((item) => item.classList.toggle("darkmode"));
 }
