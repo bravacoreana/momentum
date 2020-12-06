@@ -35,7 +35,7 @@ function loadList(array) {
 clear.addEventListener("click", function () {
   if (localStorage.getItem("TODO")) {
     if (confirm("clear all your list?")) {
-      localStorage.clear();
+      localStorage.removeItem("TODO");
       location.reload();
     } else {
     }
